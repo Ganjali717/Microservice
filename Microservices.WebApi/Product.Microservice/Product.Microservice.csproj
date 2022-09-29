@@ -19,4 +19,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Product.Entity\Product.Entity.csproj" />
+  </ItemGroup>
+
 </Project>
