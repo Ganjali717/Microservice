@@ -9,14 +9,14 @@ namespace Customer.Microservice.Controllers
         private readonly CustomerDbContext _context;
         public CustomerController(CustomerDbContext context) => _context = context;
 
-        [HttpGet("api/getallcustomer")]
+        [HttpGet("api/customer")]
         public IActionResult GetAllCustomers()
         {
             var issues = _context.Customers.ToList();
             return issues == null ? NotFound() : Ok(issues);
         }
 
-        [HttpGet("api/{id}")]
+        [HttpGet("api/customer/{id}")]
         [ProducesResponseType(typeof(Entity.Customer), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetbyId(Guid id)
@@ -25,7 +25,7 @@ namespace Customer.Microservice.Controllers
             return issue == null ? NotFound() : Ok(issue);
         }
 
-        [HttpPost("api/customeradd")]
+        [HttpPost("api/customer")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public IActionResult AddCustomers(Entity.Customer issue)
         {
@@ -35,7 +35,7 @@ namespace Customer.Microservice.Controllers
             return CreatedAtAction(nameof(GetbyId), new { id = issue.Id }, issue);
         }
 
-        [HttpGet("api/{name}")]
+        [HttpGet("api/customer/{name}")]
         [ProducesResponseType(typeof(Entity.Customer), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetbyName(string name)
@@ -44,7 +44,7 @@ namespace Customer.Microservice.Controllers
             return issue == null ? NotFound() : Ok(issue);
         }
 
-        [HttpPut("api/updatecustomer/{model}")]
+        [HttpPut("api/customer/{model}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult UpdateCustomer(Entity.Customer model)

@@ -8,14 +8,14 @@ namespace Product.Microservice.Controllers
         private readonly ProductDbContext _context;
         public ProductController(ProductDbContext context) => _context = context;
 
-        [HttpGet("api/getallproduct")]
+        [HttpGet("api/product")]
         public IActionResult GetAllProducts()
         {
             var issues = _context.Products.ToList();
             return issues == null ? NotFound() : Ok(issues);
         }
 
-        [HttpGet("api/{id}")]
+        [HttpGet("api/product/{id}")]
         [ProducesResponseType(typeof(Entity.Product), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetbyId(Guid id)
@@ -24,7 +24,7 @@ namespace Product.Microservice.Controllers
             return issue == null ? NotFound() : Ok(issue);
         }
 
-        [HttpPost("api/addproduct")]
+        [HttpPost("api/product")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public IActionResult AddProducts(Entity.Product issue)
         {
@@ -34,7 +34,7 @@ namespace Product.Microservice.Controllers
             return CreatedAtAction(nameof(GetbyId), new { id = issue.Id }, issue);
         }
 
-        [HttpGet("api/{name}")]
+        [HttpGet("api/product/{name}")]
         [ProducesResponseType(typeof(Entity.Product), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetbyName(string name)
@@ -43,7 +43,7 @@ namespace Product.Microservice.Controllers
             return issue == null ? NotFound() : Ok(issue);
         }
 
-        [HttpPut("api/updateproduct/{model}")]
+        [HttpPut("api/product/{model}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult UpdateProduct(Entity.Product model)

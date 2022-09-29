@@ -33,4 +33,3 @@ C:\Users\User\Desktop\Microservice\Microservices.WebApi\Gateway.WebApi\bin\Debug
 C:\Users\User\Desktop\Microservice\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\User\Desktop\Microservice\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\User\Desktop\Microservice\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Ocelot.dll
-C:\Users\User\Desktop\Microservice\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\ocelot.json
