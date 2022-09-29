@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Microservices.WebApi\\Customer.Microservice\\Customer.Microservice.csproj": {}
+    "C:\\Users\\User\\Desktop\\Microservice\\Microservices.WebApi\\Customer.Microservice\\Customer.Microservice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Microservices.WebApi\\Customer.Microservice\\Customer.Microservice.csproj": {
+    "C:\\Users\\User\\Desktop\\Microservice\\Microservices.WebApi\\Customer.Microservice\\Customer.Microservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices.WebApi\\Customer.Microservice\\Customer.Microservice.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservice\\Microservices.WebApi\\Customer.Microservice\\Customer.Microservice.csproj",
         "projectName": "Customer.Microservice",
-        "projectPath": "C:\\Users\\User\\Desktop\\Microservices.WebApi\\Customer.Microservice\\Customer.Microservice.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservice\\Microservices.WebApi\\Customer.Microservice\\Customer.Microservice.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Microservices.WebApi\\Customer.Microservice\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservice\\Microservices.WebApi\\Customer.Microservice\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
