@@ -1,0 +1,16 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/getallproduct",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7151
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/getallproduct",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
