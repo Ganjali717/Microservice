@@ -1,9 +1,15 @@
+using Customer.Entity.AppDbContext;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<CustomerDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerDB"), b => b.MigrationsAssembly("Customer.Microservice")));
 
 var app = builder.Build();
 
