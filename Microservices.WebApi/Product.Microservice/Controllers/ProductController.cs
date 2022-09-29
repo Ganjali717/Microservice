@@ -1,61 +1,58 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using Customer.Entity.AppDbContext;
+using Product.Entity.DAL;
 
-namespace Customer.Microservice.Controllers
+namespace Product.Microservice.Controllers
 {
-    public class CustomerController : Controller
+    public class ProductController : Controller
     {
-        private readonly CustomerDbContext _context;
-        public CustomerController(CustomerDbContext context) => _context = context;
+        private readonly ProductDbContext _context;
+        public ProductController(ProductDbContext context) => _context = context;
 
         [HttpGet]
-        public IActionResult GetAllCustomers()
+        public IActionResult GetAllProducts()
         {
-            var issues = _context.Customers.ToList();
+            var issues = _context.Products.ToList();
             return issues == null ? NotFound() : Ok(issues);
         }
 
         [HttpGet("{id}")]
-        [ProducesResponseType(typeof(Entity.Customer), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Entity.Product), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetbyId(Guid id)
         {
-            var issue = _context.Customers.FirstOrDefault(x => x.Id == id);
+            var issue = _context.Products.FirstOrDefault(x => x.Id == id);
             return issue == null ? NotFound() : Ok(issue);
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
-        public IActionResult AddCustomers(Entity.Customer issue)
+        public IActionResult AddProducts(Entity.Product issue)
         {
             if (issue == null) return BadRequest("404");
-            _context.Customers.Add(issue);
+            _context.Products.Add(issue);
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetbyId), new { id = issue.Id }, issue);
         }
 
         [HttpGet("{title}")]
-        [ProducesResponseType(typeof(Entity.Customer), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Entity.Product), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetbyName(string name)
         {
-            var issue = _context.Customers.FirstOrDefault(x => x.Name == name);
+            var issue = _context.Products.FirstOrDefault(x => x.Name == name);
             return issue == null ? NotFound() : Ok(issue);
         }
 
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult UpdateCustomer(Entity.Customer model)
+        public IActionResult UpdateProduct(Entity.Product model)
         {
-            var issue = _context.Customers.FirstOrDefault(x => x.Id == model.Id);
+            var issue = _context.Products.FirstOrDefault(x => x.Id == model.Id);
             if (issue == null) return NotFound();
             issue.Name = model.Name;
-            issue.Surname = model.Surname;
-            issue.Email = model.Email;
-            issue.MobilePhone = model.MobilePhone;
-            issue.Address = model.Address;
+            issue.Color = model.Color;
+            issue.Type = model.Type;
             _context.SaveChanges();
             return Ok();
         }
