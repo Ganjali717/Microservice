@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.WebApi", "Gateway.W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{9207333C-E8F7-4416-83A0-920DAC232952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.Entity", "Customer.Entity\Customer.Entity.csproj", "{D5EABF0A-9E82-42F8-9B38-8608F7B47B37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customer.Entity", "Customer.Entity\Customer.Entity.csproj", "{D5EABF0A-9E82-42F8-9B38-8608F7B47B37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Entity", "Product.Entity\Product.Entity.csproj", "{6F783A37-F79D-46F7-A3C2-FD681D9FDCC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Entity", "Product.Entity\Product.Entity.csproj", "{6F783A37-F79D-46F7-A3C2-FD681D9FDCC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtAuthenticationManager", "JwtAuthenticationManager\JwtAuthenticationManager.csproj", "{E6A93965-8A12-4791-9F84-A0C10232AED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationWebApi", "AuthenticationWebApi\AuthenticationWebApi.csproj", "{96378A24-8D1F-4A90-BC54-7D441D44BE33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,14 @@ Global
 		{6F783A37-F79D-46F7-A3C2-FD681D9FDCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F783A37-F79D-46F7-A3C2-FD681D9FDCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F783A37-F79D-46F7-A3C2-FD681D9FDCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A93965-8A12-4791-9F84-A0C10232AED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A93965-8A12-4791-9F84-A0C10232AED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A93965-8A12-4791-9F84-A0C10232AED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A93965-8A12-4791-9F84-A0C10232AED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96378A24-8D1F-4A90-BC54-7D441D44BE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96378A24-8D1F-4A90-BC54-7D441D44BE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96378A24-8D1F-4A90-BC54-7D441D44BE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96378A24-8D1F-4A90-BC54-7D441D44BE33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,3 +10,15 @@ C:\Users\User\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debu
 C:\Users\User\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\refint\Customer.Entity.dll
 C:\Users\User\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\Customer.Entity.pdb
 C:\Users\User\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\ref\Customer.Entity.dll
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\bin\Debug\net6.0\Customer.Entity.deps.json
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\bin\Debug\net6.0\Customer.Entity.dll
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\bin\Debug\net6.0\Customer.Entity.pdb
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\Customer.Entity.csproj.AssemblyReference.cache
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\Customer.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\Customer.Entity.AssemblyInfoInputs.cache
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\Customer.Entity.AssemblyInfo.cs
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\Customer.Entity.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\Customer.Entity.dll
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\refint\Customer.Entity.dll
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\Customer.Entity.pdb
+C:\Users\LENOVO\OneDrive\Desktop\Microservice\Microservices.WebApi\Customer.Entity\obj\Debug\net6.0\ref\Customer.Entity.dll
